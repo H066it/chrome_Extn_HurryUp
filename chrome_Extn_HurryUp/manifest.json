@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Hurry_Up",
+    "version": "1.0",
+    "description": "Do install! For your waist health.",
+
+    "icons": {
+      "19": "img/hurryUp.png",
+      "15": "img/hurryUp_15.png",
+      "30": "img/hurryUp_30.png",
+      "60": "img/hurryUp_60.png",
+      "48": "img/hurryUp_big.png"
+    },
+
+    "browser_action": {
+        "default_icon": "img/hurryUp.png",
+        "default_title": "be health!"
+    },
+    "permissions": [
+        "background",
+        "notifications",
+        "storage",
+        "tabs"
+    ],
+    "background": {
+      "persistent": false,
+      "scripts": ["js/jquery-3.2.1.min.js", "js/background.js"]
+    }
+}
